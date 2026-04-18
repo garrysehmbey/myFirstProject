@@ -1,7 +1,12 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  font-family:Arial, sans-serif;
+  background:linear-gradient(rgba(15, 23, 42, 0.7), rgba(30, 41, 59, 0.7)),
+              url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
 
