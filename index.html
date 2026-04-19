@@ -28,7 +28,7 @@
       <h1>Garry Sehmbey</h1>
       <p>Full Stack Developer</p>
 
-      <button onclick="playMusic(); alert('Mission in Progress 🚀 More exciting updates coming soon!')">
+      <button onclick="playMusic();">
         Contact Me
       </button>
     </div>
@@ -41,7 +41,7 @@
 
   <script>
     function checkAccess() {
-      const allowedNames = ["gurpreet", "garry", "navneet", "rubaani","ajay","pankaj","garrysehmbey","ajaymughraan","baljitkaur","baljit"];
+      const allowedNames = ["gurpreet", "garry", "navneet", "rubaani","ajay","pankaj","garrysehmbey","ajaymughraan","baljitkaur","baljit","preeti","harman","seerat","inderpal"];
       const enteredName = document.getElementById("nameInput").value.toLowerCase().trim();
 
       if (allowedNames.includes(enteredName)) {
@@ -56,6 +56,12 @@
     function playMusic() {
       const music = document.getElementById("bgMusic");
       music.play();
+      setTimeout(() => {
+      alert('Mission in Progress 🚀 More exciting updates coming soon!---press "OK" for stop music.');
+
+      music.pause();
+      music.currentTime = 0;
+    }, 300);
     }
   </script>
 
