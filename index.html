@@ -49,11 +49,15 @@
         document.getElementById("bgMusic").play();
         document.getElementById("auth-screen").style.display = "none";
         document.getElementById("main-content").style.display = "block";
-        window.scrollTo({
-  top: 0,
-  behavior: "smooth"
-});
-      } else {
+        setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, 100);
+
+}
+         else {
         alert("Access Denied");
       }
     }
