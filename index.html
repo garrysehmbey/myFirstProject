@@ -14,9 +14,32 @@
   <img src="myphoto.jpg" class="profile-pic">
     <h1>Garry Sehmbey</h1>
     <p>Full Stack Developer</p>
-    <button onclick="alert('Mission in Progress 🚀 More exciting updates coming soon!')">
+  <audio id="bgMusic">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()" id="musicBtn">
   Contact Me
 </button>
+
+<audio id="bgMusic">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    const music = document.getElementById("bgMusic");
+
+    music.play();
+
+    setTimeout(() => {
+      alert('Mission in Progress 🚀 More exciting updates coming soon!---press "OK"for stop music.');
+
+      music.pause();
+      music.currentTime = 0;
+    }, 300);
+  }
+</script>
   </div>
 </body>
 </html>
