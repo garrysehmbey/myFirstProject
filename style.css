@@ -1,3 +1,26 @@
+#auth-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#auth-screen input {
+  width: 260px;
+  max-width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+
+#auth-screen button {
+  margin-top: 15px;
+}
 body {
   margin: 0;
   font-family:Arial, sans-serif;
@@ -25,7 +48,8 @@ p{
 }
 
 button {
-  font-size: 18px;
+  font-size: 18px;
+
   padding: 12px 24px;
   border: none;
   border-radius: 10px;
